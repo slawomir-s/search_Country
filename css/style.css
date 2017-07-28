@@ -159,7 +159,7 @@ footer .author {
 
 @media (min-width: 481px) and (max-width: 991px) {
   
-    header .globe img {
+  header .globe img {
     width: 40vw;
     height: 40vw;
   }
@@ -219,7 +219,7 @@ footer .author {
   }
 
   .table .contentbox {
-    margin: 50px;
+    margin: 10px;
   }
 
   .table .contentbox ul li {
