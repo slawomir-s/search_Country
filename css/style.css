@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Mogra");
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 * {
   box-sizing: border-box;
@@ -6,9 +7,11 @@
 
 body {
   margin: 0 auto;
-  font-family: 'Mogra', cursive;
+  font-family: 'EB Garamond', serif;
   padding: 15px;
   text-align: center;
+  background: url(http://dawnsescapadestravel.com/wp-content/uploads/2013/09/grungy-world-map-background.jpg) no-repeat center center fixed;
+  background-size: cover;
   background-color: #fff;
   color: #494949;
 }
@@ -26,21 +29,26 @@ body {
   width: 100%;
 }
 
-header .globe img {
-  width: 400px;
-  object-fit: cover;
-  height: 400px;
-}
-
 header .description h1 {
+  font-family: 'Quicksand', sans-serif;
   font-size: 60px;
-  font-weight: lighter;
   margin-top: 10px;
   position: block;
+  color: #fff;
 }
 
 .research {
-  margin-top: 50px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 180px;
+  margin-left: 350px;
+  margin-right: 350px;
+  box-shadow: 0 2px 5px 2px gray;
+}
+
+.research p {
+  color: #fff;
+  font-size: 20px;
 }
 
 .research input {
@@ -53,6 +61,7 @@ header .description h1 {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.55), 0px 1px 1px rgba(255, 255, 255, 0.5);
   border: 1px solid #666;
   text-align: center;
+  opacity: 0.5;
 }
 
 .research input:hover, .research input:focus {
@@ -68,14 +77,10 @@ header .description h1 {
   outline: none;
 }
 
-.research input {
-  opacity: 0.5;
-}
-
 .research button {
   opacity: .99;
   width: 150px;
-  background: #08c;
+  background: #EFAC6B;
   box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 6px rgba(0, 246, 255, 0.5);
   border: 1px solid #0a5378;
   border-radius: 4px;
@@ -98,9 +103,9 @@ header .description h1 {
 
 .table .contentbox {
   position: relative;
-  background: #efefef;
+  background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 2px 5px 2px gray;
-  margin: 50px 450px;
+  margin: 40px 450px;
 }
 
 .table .contentbox ul {
@@ -113,8 +118,9 @@ header .description h1 {
   list-style-type: none;
   padding: 10px;
   margin: 3px 5px;
-  background: #EFED9A;
+  background: rgba(0, 0, 0, 0.4);
   text-align: left;
+  color: #B66C36;
 }
 
 .table .contentbox ul li span {
@@ -123,19 +129,17 @@ header .description h1 {
 }
 
 .table .contentbox ul li.name {
-  background: #fff;
-  color: #0308F1;
+  background: rgba(0, 0, 0, 0.4);
+  color: #EFAC6B;
   font-size: 20px;
   padding: 5px 0;
   text-align: center;
 }
 
 .table .contentbox ul li.info {
-  background: #080985;
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 17px;
-  border-left: 1px solid #f2f2f2;
-  border-right: 1px solid #f2f2f2;
 }
 
 .table .contentbox ul .flag {
@@ -144,38 +148,38 @@ header .description h1 {
 }
 
 .table .contentbox ul .flag img {
-  height: 120px;
-  width: 160px;
+  height: 100px;
+  width: 140px;
 }
 
 footer .author {
-  background: #E8AD3A;
-  height: 70px;
-  position: relative;
+  background: rgba(229, 138, 67, 0.5);
+  height: 60px;
+  position: fixed;
   width: 100%;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
 }
 
-@media (min-width: 481px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 1199px) {
   
-  header .globe img {
-    width: 40vw;
-    height: 40vw;
-  }
-
   header .description h1 {
     font-size: 2.2em;
     margin-top: 40px;
   }
 
   .research {
-    margin-top: 10px;
-    font-size: 0.9em;
+    height: 200px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 
   .table .contentbox {
-    margin: 40px 100px;
+    margin: 40px 150px;
   }
 
   .table .contentbox ul li {
@@ -197,27 +201,31 @@ footer .author {
 
   footer .author {
     height: 50px;
-    line-height: 55px;
+    line-height: 1;
   }
 }
 
 @media (max-width: 480px) {
   
-    header .globe img {
-    width: 60vw;
-    height: 60vw;
-  }
-
   header .description h1 {
     font-size: 30px;
     margin-top: 40px;
   }
 
   .research {
+    height: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 10px;
     font-size: 0.8em;
   }
 
+  .research input {
+    display: block;
+    font-size: 14px;
+    width: 200px;
+  }
+  
   .table .contentbox {
     margin: 10px;
   }
@@ -241,6 +249,6 @@ footer .author {
 
   footer .author {
     height: 50px;
-    line-height: 55px;
+    line-height: 1;
   }
 }
